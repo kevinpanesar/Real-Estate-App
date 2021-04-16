@@ -1,0 +1,160 @@
+
+
+.result{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    width: 50%;
+
+    table{
+        margin-bottom: 20px;
+    }
+
+    th{
+    padding: 22px 10px;
+    height: 65px;
+    background-color: #384145;
+    color: #ffffff;
+    font-weight: normal;
+      
+    }
+
+   .secondCol{
+          color: #808c91;
+      }
+    #spinner{
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    .bodyContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #myCarousel{
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .card-body{
+    img{
+        width: 100px;
+    }
+
+}
+
+h1{
+    padding-top: 20px;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+.figure-caption{
+    margin-top: 20px;
+}
+#virtualTour{
+    margin-bottom: 25px;
+}
+
+#backButton{
+    margin-top: 20px;
+}
+.propertyDetailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+#propertyDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+}
+   .list-group-item{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .card-body{
+        width: 50%;
+    }
+}
+
+main{
+    background-color: rgb(236, 236, 236);
+}
+
+#Logo{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0;
+    font-size: 40px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+    .result{
+        width: 80%;
+        #Logo {
+            font-size: 35px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        .list-group-item{
+            font-size: 13px;
+        }
+
+        #virtualTour{
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px){
+    .result{
+        width: 100%;
+        #myCarousel{
+            width: 100%;
+        }
+         .list-group-item{
+            font-size: 11px;
+        }
+        #Logo {
+            font-size: 30px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+
+}

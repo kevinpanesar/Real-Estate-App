@@ -1,0 +1,273 @@
+#listingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    #listingsContainer{
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: center;
+         min-height: 1vh;
+            .preview {
+                width: 400px;
+                height: 300px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                .listingPreviewText{
+                padding-left: 10px;
+                padding-bottom: 10px;
+                background: rgba(0, 0, 0, 0.4);
+                color: white;
+                width: 100%;
+       
+    
+          }
+    }
+
+    }
+
+    #filterResults{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 30px;
+        .accordion{
+            width: 100%;
+            #filterButton{
+                margin-left: 20px;
+            }
+        }
+
+        .filterResultsContainer{
+            width: 100%;
+            .filterItem{
+                margin:15px;
+            }
+        }
+    }
+
+    p{
+         
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 auto;
+            font-size: 60px;
+        }
+
+}
+
+.form-group{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    select{
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 150px;
+
+    }
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.resultsPage{
+    background-color: white;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+         
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 10px;
+            font-size: 40px;
+        }
+
+
+ button {
+    margin-bottom: 15px;
+ }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 450px){
+    .resultsPage{
+        width: 100%;
+        button{
+            margin-left: 0px;
+        }
+        
+        p{
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+    }
+    #listingPage
+    {
+        #listingsContainer{
+        display: flex;    
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+        flex-direction: column;
+          .preview{
+          width: 80%;
+    
+    }
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    #filterResults{
+        margin-top: 0px;
+    }
+}
+
+    .form-group{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+      .filterItem{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      select{
+        width: 80%;
+      }
+      label{
+          margin-top: 8px;
+          width: 80%;
+          margin-left: 15px;
+      }
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .pagination{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 769px){
+        .resultsPage{
+        width: 100%;
+        button{
+            margin-left: 0px;
+        }
+        
+        p{
+            font-size: 25px;
+        }
+    }
+    #listingPage
+    {
+        #listingsContainer{
+        display: flex;    
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 15px;
+          .preview{
+          width: 100%;
+    
+    }
+        a{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    #filterResults{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        .filterResultsContainer{
+            width: 100%;
+        }
+    }
+}
+
+    .form-group{
+      width: 100%;
+      display: flex;
+      margin-bottom: 0px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .filterItem{
+        height: 60px;
+        }
+      label{
+          margin-top: 8px;
+      }
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .pagination{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1024px){
+#listingPage {
+
+    #listingsContainer{
+
+            .preview {
+                width: 200px;
+                height: 180px;
+            }
+        }
+
+    .form-group{
+        flex-wrap: wrap;
+
+        .filterItem{
+            width: 295px;
+            height: 60px;
+        }
+    }
+}
+
+.resultsPage{
+    button{
+        margin-left: 0px;
+    }
+}
+}
